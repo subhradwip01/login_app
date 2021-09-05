@@ -1,5 +1,5 @@
   const firebaseConfig = {
-    apiKey: "AIzaSyDcF4LPc0Jn8sorXrbgfsS0tj-rPGQ2HBc",
+    apiKey: "API-KEY",
     authDomain: "demowebs-7d1de.firebaseapp.com",
     databaseURL: "https://demowebs-7d1de-default-rtdb.firebaseio.com",
     projectId: "demowebs-7d1de",
