@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custome Css -->
+    <link rel="stylesheet" href="./static/css/signup.css" />
+    <!-- Font Awsome CDN -->
+    <!-- Font-Awsome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">Sign Up Now!</h1>
+      <form action="" class="form-control" id="form">
+        <div class="form-info" id="name-info">
+          <label for="name"><i class="fas fa-user"></i>Enter Your Full name</label>
+          <input type="text" id="name" placeholder="Enter Your Full Name"/>
+          <i class="fas fa-check-circle checker"></i>
+          <i class="fas fa-exclamation-circle wrong"></i>
+          <small>Error</small>
+        </div>
+
+        <div class="form-info" id="email-info">
+          <label for="email"><i class="fas fa-envelope"></i>Enter Your email ID </label>
+          <input type="text" id="email" placeholder="Enter Your email ID" />
+          <i class="fas fa-check-circle checker"></i>
+          <i class="fas fa-exclamation-circle wrong"></i>
+          <small>Error</small>
+        </div>
+
+        <div class="form-info" id="password-info">
+          <label for="password"><i class="fas fa-key"></i>Enter password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter Your password"
+          />
+          <i class="fas fa-check-circle checker"></i>
+          <i class="fas fa-exclamation-circle wrong"></i>
+          <small>Error</small>
+        </div>
+
+        <div class="form-info" id="cpassword-info">
+          <label for="confirm-password"><i class="fas fa-key"></i>Confirm password</label>
+          <input
+            type="password"
+            id="cpassword"
+            placeholder="Enter Your password"
+          />
+          <i class="fas fa-check-circle checker"></i>
+          <i class="fas fa-exclamation-circle wrong"></i>
+          <small>Error</small>
+        </div>
+        <div id="sbtn">
+
+          <button type="submit" class="btn" id="signup-btn">Sign Up</button>
+        </div>
+        <div id="error-msg"></div>
+      </form>
+      <hr>
+      <div class="link-to-login-signup">
+        <p>Already Have An Account? <span> <a href="./index.html">log in</a></span></p>
+    </div>
+     
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-database.js"></script>
+      <script src="./static/js/signup.js"></script>
+  </body>
+</html>

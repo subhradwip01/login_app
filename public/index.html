@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./static/css/signup.css">
+    <title>Log In</title>
+</head>
+<body>
+    <div class="container">
+      <h1 class="header">Log in Now!</h1>
+      <form action="" class="form-control" id="form" onsubmit="login()" autocomplete="off">
+          <div class="form-info" id="email-info">
+          <label for="email-id"><i class="fas fa-envelope"></i>Enter Your email ID </label>
+          <input type="text" id="email" placeholder="Enter Your email ID" />
+        </div>
+
+        <div class="form-info" id="password-info">
+          <label for="password"><i class="fas fa-key"></i>Enter password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter Your password"
+          />
+        </div>
+        <div id="lbtn">
+          <button type="submit" class="btn" id="login-btn">Log In</button>
+        </div>
+        
+      </form>
+      <div id="error-msg"></div>
+      <hr>
+     <div class="link-to-login-signup">
+        <p>Dont't Have An Account? <span><a href="./signup.html"> Sign Up</a></span></p>
+     
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+    <script src="./firebase.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+      <script src="./static/js/index.js"></script>
+</body>
+</html>
